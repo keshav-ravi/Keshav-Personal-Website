@@ -27,7 +27,7 @@
 
   var targets = document.querySelectorAll(
     'main > .eyebrow, main > h1, main > .lead, main > p, main > .button-row, main .section-title, ' +
-    'main .card, main .contact-form, main .contact-side, main section > .tags'
+    'main .card, main .panels li, main .contact-form, main .contact-side, main section > .tags'
   );
 
   // Give stat tiles a stagger index so they pop in one after another.
