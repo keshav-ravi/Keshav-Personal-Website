@@ -35,22 +35,34 @@
     <p class="lead">Things I've built on my own time.</p>
 
     <ul class="card-list">
-      <li class="card">
-        <h2>Project One</h2>
-        <p>Placeholder description: what it does, why you built it, and what you learned.</p>
-        <ul class="tags" aria-label="Technologies"><li>Python</li><li>Data</li></ul>
-        <p style="margin-top:0.75rem"><a href="#">View project</a></p>
-      </li>
-      <li class="card">
-        <h2>Project Two</h2>
-        <p>Placeholder description of a second project and the problem it solves.</p>
-        <ul class="tags" aria-label="Technologies"><li>JavaScript</li><li>Web</li></ul>
-        <p style="margin-top:0.75rem"><a href="#">View project</a></p>
-      </li>
-      <li class="card">
-        <h2>Project Three</h2>
-        <p>Placeholder description of a third project.</p>
-        <p style="margin-top:0.75rem"><a href="#">View project</a></p>
+      <li class="card job">
+        <div class="job-head">
+          <div>
+            <h2>SetTimer</h2>
+            <p class="role">Workout logger with an automatic rest timer</p>
+          </div>
+          <p class="meta">2026<br>Web app (PWA)</p>
+        </div>
+
+        <p>A mobile-first app for gym-goers. Log a set and a rest timer starts on its own, so there's no switching to the clock app between sets. It's tied to a goal I care about: keeping a record of my workouts and watching my progress over time.</p>
+
+        <ul class="stats" aria-label="Highlights">
+          <li><span class="stat-num">10 of 10</span><span class="stat-label">locked-screen alerts on iPhone arrived within 3 seconds</span></li>
+          <li><span class="stat-num">90s</span><span class="stat-label">default rest, adjustable from 15s to 10 min</span></li>
+        </ul>
+
+        <h3 class="sub-title">The interesting problem</h3>
+        <p>iPhones freeze a web app's JavaScript when the screen locks, so an in-page timer can't alert you on time. I solved it with server-scheduled Web Push: logging a set schedules a notification on the server for the end of the rest, and logging another set or stopping cancels it. The timer stores an end timestamp rather than a countdown, so it stays accurate after the app is throttled or backgrounded.</p>
+
+        <h3 class="sub-title">Built with</h3>
+        <ul class="tags" aria-label="Technologies">
+          <li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Supabase</li><li>Web Push</li><li>QStash</li><li>PostHog</li><li>Vitest</li><li>Vercel</li>
+        </ul>
+
+        <div class="button-row">
+          <a class="button" href="https://set-timer-project-red.vercel.app" target="_blank" rel="noopener">Open the app<span class="visually-hidden"> (opens in a new tab)</span></a>
+          <a class="button secondary" href="https://github.com/keshav-ravi/SetTimer_Project" target="_blank" rel="noopener">View code on GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </div>
       </li>
     </ul>
   </main>

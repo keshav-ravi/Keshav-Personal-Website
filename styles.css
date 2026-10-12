@@ -263,3 +263,5 @@ section .tags { margin-top: 1rem; }
   .job-head .meta { text-align: left; }
   .stats { grid-template-columns: repeat(2, 1fr); }
 }
+
+.sub-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 1.5rem 0 0.5rem; }
