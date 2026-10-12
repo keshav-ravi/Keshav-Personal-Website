@@ -2,7 +2,7 @@
   var form = document.getElementById('contact-form');
   var note = document.getElementById('form-note');
   var button = form.querySelector('button[type="submit"]');
-  var fallback = 'kravi (at) chicagobooth (dot) edu';
+  var fallback = 'kravi1(at)chicagobooth(dot)edu';
 
   // Until a real Formspree form ID is set in contact.html, fall back to the visitor's email app.
   var configured = form.action.indexOf('YOUR_FORM_ID') === -1;
@@ -11,7 +11,7 @@
     e.preventDefault();
 
     if (!configured) {
-      var to = ['kravi', 'chicagobooth.edu'].join('@');
+      var to = ['kravi1', 'chicagobooth.edu'].join('@');
       var name = form.elements.name.value.trim();
       var body = form.elements.message.value.trim() + '\n\n— ' + name + ' (' + form.elements.email.value.trim() + ')';
       window.location.href = 'mailto:' + to + '?subject=' +
