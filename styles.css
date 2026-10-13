@@ -188,6 +188,8 @@ main > section:first-of-type .section-title { margin-top: 2rem; }
 /* Homepage hero */
 .hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 2.5rem; align-items: center; }
 .hero-text .lead { margin-bottom: 0; }
+.hero-figure { margin: 0; }
+.hero-figure figcaption { font-size: 0.95rem; color: var(--muted); margin-top: 0.4rem; text-align: center; }
 .hero-photo { display: block; width: 100%; height: auto; border-radius: 0.375rem; }
 
 /* Homepage panels */
