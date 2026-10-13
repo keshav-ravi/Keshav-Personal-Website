@@ -26,8 +26,8 @@
   if (reduce || !('IntersectionObserver' in window)) return;
 
   var targets = document.querySelectorAll(
-    'main > .eyebrow, main > h1, main > .lead, main > p, main > .button-row, main .section-title, ' +
-    'main .card, main .panels li, main .contact-form, main .contact-side, main section > .tags'
+    'main > .eyebrow, main > h1, main > .lead, main > p, main .hero-text > *, main .hero-photo, main > .about-photo, main > .button-row, main .section-title, ' +
+    'main .card, main .tennis-figure, main .tennis-text p, main section > p, main .gallery figure, main .panels li, main .contact-form, main .contact-side, main section > .tags'
   );
 
   // Give stat tiles a stagger index so they pop in one after another.

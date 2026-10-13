@@ -35,27 +35,62 @@
 
   <main id="main">
     <h1>Interests</h1>
-    <p class="lead">What I do when I'm not in class or at work.</p>
+    <p class="lead">Tennis on the court, photography everywhere else.</p>
 
-    <ul class="card-list">
-      <li class="card">
-        <h2>Fitness</h2>
-        <p>I like to stay active, and I want to keep tracking my workouts and seeing my progress over time. So I built a custom app that lets me log workouts and automatically starts a rest timer, so I don't have to bounce between the clock app and everything else mid-session.</p>
-        <p><a href="https://set-timer-project-red.vercel.app" target="_blank" rel="noopener">Try the app<span class="visually-hidden"> (opens in a new tab)</span> &rarr;</a></p>
-      </li>
-      <li class="card">
-        <h2>Photography</h2>
-        <p>My DSLR comes with me on every vacation. I love slowing down to look for the shot, and then editing the photos afterward.</p>
-        <div class="photo-placeholder" role="img" aria-label="Placeholder for photography portfolio">
-          <p>Portfolio coming soon</p>
-        </div>
-        <!-- TODO: replace the placeholder above with a portfolio link or photo grid -->
-      </li>
-      <li class="card">
-        <h2>Also</h2>
-        <p>Open-water PADI diving, board games, cooking, tennis and Formula 1.</p>
-      </li>
-    </ul>
+    <section aria-labelledby="tennis-h">
+      <h2 class="section-title section-title-lg" id="tennis-h">Tennis</h2>
+      <figure class="tennis-figure">
+        <img class="tennis-photo" src="photos/tennis.jpg" alt="Keshav and his father playing doubles tennis with close family friends" loading="lazy">
+        <figcaption>My dad (left most) and me (yellow shirt) playing doubles with close family friends.</figcaption>
+      </figure>
+      <div class="tennis-text">
+        <p>Tennis is how I stay close to my father, whom I lost unexpectedly in 2020. He coached me on my serve, making me serve basket after basket. It was bitter work in the moment, but the results paid off on the court with my serve being my best stroke.</p>
+        <p>But, the memories I treasure most are from playing doubles together. We were a team and would talk through our plan and laugh off the misses. When losing a few points in a row, he’d remind me to forget it and focus on the next one.</p>
+        <p>Doubles taught me how to communicate, trust a partner, and adapt on the fly. It’s also where I learned that teamwork is just more fun. I bring that same energy to everything I do, one point at a time.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="photo-h">
+      <h2 class="section-title section-title-lg" id="photo-h">Photography</h2>
+      <p>My DSLR comes with me on every vacation. I like slowing down to look for the shot, and I enjoy editing the photos afterward. Here are a few favorites.</p>
+
+      <div class="gallery">
+        <figure>
+          <img src="photos/elephant-tanzania.jpg" alt="African elephant in the Serengeti, Tanzania" loading="lazy">
+          <figcaption><strong>African Elephant, Tanzania 2022.</strong> My first trip using my DSLR was on a safari in the Serengeti. Elephants are one of my favorite animals.</figcaption>
+        </figure>
+        <figure>
+          <img src="photos/cheetah-tanzania.jpg" alt="Cheetah family on an ant hill in Tanzania" loading="lazy">
+          <figcaption><strong>Cheetah, Tanzania 2022.</strong> A rare moment: a whole cheetah family on an ant hill.</figcaption>
+        </figure>
+        <figure>
+          <img src="photos/cherry-blossoms-nyc.jpg" alt="Cherry blossoms in front of the El Dorado building in New York City" loading="lazy">
+          <figcaption><strong>Cherry Blossoms, NYC.</strong> Capturing the iconic El Dorado building during cherry blossom season.</figcaption>
+        </figure>
+        <figure>
+          <img src="photos/banff.jpg" alt="Mountain landscape in Banff" loading="lazy">
+          <figcaption><strong>Landscape, Banff.</strong> Easily one of the most gorgeous places I have visited.</figcaption>
+        </figure>
+        <figure>
+          <img src="photos/lucerne.jpg" alt="Swiss Alps landscape near Lucerne" loading="lazy">
+          <figcaption><strong>Lucerne, 2022.</strong> The Swiss Alps are as breathtaking as people say.</figcaption>
+        </figure>
+        <figure>
+          <img src="photos/sintra.jpg" alt="Framed view in Sintra, Portugal" loading="lazy">
+          <figcaption><strong>Perspective, Sintra 2022.</strong> One of my personal framing favorites from Sintra.</figcaption>
+        </figure>
+        <figure>
+          <img src="photos/chicago-skyline.jpg" alt="Chicago skyline from Lincoln Park" loading="lazy">
+          <figcaption><strong>Skyline, Chicago.</strong> Lincoln Park is one of my favorite places in Chicago.</figcaption>
+        </figure>
+        <figure>
+          <img src="photos/bonaire-sunset.jpg" alt="Sunset over the water in Bonaire" loading="lazy">
+          <figcaption><strong>Sunset, Bonaire.</strong> The best sunset I've seen in my life (so far).</figcaption>
+        </figure>
+      </div>
+
+      <p class="gallery-link">To see more, check out <a href="https://www.instagram.com/picsbykeshav/" target="_blank" rel="noopener">my photo Instagram, @picsbykeshav<span class="visually-hidden"> (opens in a new tab)</span></a> &rarr;</p>
+    </section>
   </main>
 
   <footer class="site-footer">&copy; <span id="year">2026</span> Keshav Ravi</footer>
